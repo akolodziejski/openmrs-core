@@ -71,6 +71,8 @@ public final class Module {
 	
 	private Map<String, String> awareOfModulesMap;
 	
+	private Map<String, String> startBeforeModulesMap;
+	
 	private List<AdvicePoint> advicePoints = new Vector<AdvicePoint>();
 	
 	private IdentityHashMap<String, String> extensionNames = new IdentityHashMap<String, String>();
@@ -335,8 +337,24 @@ public final class Module {
 	 * 
 	 * @return a map from required module to the version that is required
 	 */
-	public Map<String, String> setRequiredModulesMap() {
+	public Map<String, String> getRequiredModulesMap() {
 		return requiredModulesMap;
+	}
+	
+	/**
+	 * TODO areo
+	 * @param startBeforeModulesMap
+	 */
+	public void setStartBeforeModulesMap(Map<String, String> startBeforeModulesMap) {
+		this.startBeforeModulesMap = startBeforeModulesMap;
+	}
+	
+	/**
+	 * TODO areo
+	 * @return
+	 */
+	public Map<String, String> getStartBeforeModulesMap() {
+		return this.startBeforeModulesMap;
 	}
 	
 	/**
