@@ -127,6 +127,7 @@ public class ModuleFileParser {
 	 * Get the module
 	 * 
 	 * @return new module object
+	 * @should parse start-before modules
 	 */
 	public Module parse() throws ModuleException {
 		
