@@ -215,7 +215,7 @@ public class ModuleFactory {
 								if (log.isDebugEnabled())
 									log.debug("starting module: " + mod.getModuleId());
 								
-								 startModule(mod);
+								startModule(mod);
 							}
 							catch (Exception e) {
 								log.error("Error while starting module: " + mod.getName(), e);

@@ -357,6 +357,10 @@ public final class Module {
 		return this.startBeforeModulesMap;
 	}
 	
+	public List<String> getStartedBeforeModules() {
+		return this.startBeforeModulesMap == null ? null : new ArrayList<String>(this.startBeforeModulesMap.keySet());
+	}
+	
 	/**
 	 * Sets the modules that this module is aware of.
 	 * 
