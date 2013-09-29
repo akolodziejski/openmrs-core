@@ -342,22 +342,27 @@ public final class Module {
 	}
 	
 	/**
-	 * TODO areo
-	 * @param startBeforeModulesMap
+	 * Sets modules that muststart before this module
+	 * @param startBeforeModulesMap the startedBefore modules to set
 	 */
 	public void setStartBeforeModulesMap(Map<String, String> startBeforeModulesMap) {
 		this.startBeforeModulesMap = startBeforeModulesMap;
 	}
 	
 	/**
-	 * TODO areo
+	 * Gets mosules that must be started before this module
 	 * @return
 	 */
 	public Map<String, String> getStartBeforeModulesMap() {
 		return this.startBeforeModulesMap;
 	}
 	
-	public List<String> getStartedBeforeModules() {
+	/**
+	 * The list of strings is insluded in config.xml, the full package names
+	 * @since 2.0
+	 * @return
+	 */
+	public List<String> getStartBeforeModules() {
 		return this.startBeforeModulesMap == null ? null : new ArrayList<String>(this.startBeforeModulesMap.keySet());
 	}
 	
